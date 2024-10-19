@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inovasi Digital untuk Membangun Masa Depan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Tambahkan ini ke file styles.css */
+
+            header {
+                background: linear-gradient(45deg, #1a1a1a, #4a4a4a);
+            }
+
+            .z-index-1 {
+                z-index: 1;
+            }
+
+            .innovation-svg {
+                width: 100%;
+                height: auto;
+            }
+
+            .circle1, .circle2, .circle3, .line1, .line2 {
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+                animation: dash 3s linear forwards;
+            }
+
+            .dot1, .dot2, .dot3, .dot4 {
+                opacity: 0;
+                animation: fadeIn 0.5s ease-out forwards;
+            }
+
+            .dot1 { animation-delay: 2s; }
+            .dot2 { animation-delay: 2.5s; }
+            .dot3 { animation-delay: 3s; }
+            .dot4 { animation-delay: 3.5s; }
+
+            @keyframes dash {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+
+            @keyframes fadeIn {
+                to {
+                    opacity: 1;
+                }
+            }
+
+            .scroll-down {
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+                animation: bounce 2s infinite;
+            }
+
+            @keyframes bounce {
+                0%, 20%, 50%, 80%, 100% {
+                    transform: translateY(0) translateX(-50%);
+                }
+                40% {
+                    transform: translateY(-30px) translateX(-50%);
+                }
+                60% {
+                    transform: translateY(-15px) translateX(-50%);
+                }
+            }
+
+            /* Tambahkan efek hover pada tombol */
+            .btn-outline-light:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                transform: translateY(-3px);
+                box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+                transition: all 0.3s ease;
+            }
+    </style>
+</head>
+<body class="fade-out">
+    <!-- Tambahkan ini tepat setelah tag <body> di file index.html -->
+<div id="preloader">
+    <div class="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+    </div>
+</div>
+<div class="page-transition-overlay"></div>
+<!-- Sisa konten website Anda -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-digital-tachograph"></i> DigiInnovate</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inovasi">Inovasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#teknologi">Teknologi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+                <div class="ms-2">
+                    <button id="darkModeToggle" class="btn btn-outline-light"><i class="fas fa-moon"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="beranda" class="vh-100 d-flex align-items-center position-relative overflow-hidden">
+        <div id="particles-js" class="position-absolute w-100 h-100"></div>
+        <div class="container position-relative z-index-1">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-white">
+                    <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInLeft">Inovasi Digital untuk Masa Depan</h1>
+                    <p class="lead mb-4 animate__animated animate__fadeInLeft animate__delay-1s">Membangun dunia yang lebih baik melalui teknologi canggih dan solusi inovatif</p>
+                    <a href="#inovasi" class="btn btn-outline-light btn-lg animate__animated animate__fadeInUp animate__delay-2s">Jelajahi Inovasi</a>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="position-relative">
+                        <svg class="innovation-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="circle1" cx="250" cy="250" r="200" fill="none" stroke="#ffffff" stroke-width="2"/>
+                            <circle class="circle2" cx="250" cy="250" r="150" fill="none" stroke="#ffffff" stroke-width="2"/>
+                            <circle class="circle3" cx="250" cy="250" r="100" fill="none" stroke="#ffffff" stroke-width="2"/>
+                            <path class="line1" d="M250 50 L250 450" stroke="#ffffff" stroke-width="2"/>
+                            <path class="line2" d="M50 250 L450 250" stroke="#ffffff" stroke-width="2"/>
+                            <circle class="dot1" cx="250" cy="50" r="10" fill="#ffffff"/>
+                            <circle class="dot2" cx="450" cy="250" r="10" fill="#ffffff"/>
+                            <circle class="dot3" cx="250" cy="450" r="10" fill="#ffffff"/>
+                            <circle class="dot4" cx="50" cy="250" r="10" fill="#ffffff"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#inovasi" class="text-white">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inovasi" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Inovasi Terkini</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/AI.jpg" class="card-img-top" alt="AI">
+                            <div class="card-body">
+                                <h5 class="card-title">Kecerdasan Buatan</h5>
+                                <p class="card-text">Mengembangkan AI untuk memecahkan masalah kompleks.</p>
+                                <a href="ai.html" class="btn btn-primary">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/IOT.png" class="card-img-top" alt="IoT">
+                            <div class="card-body">
+                                <h5 class="card-title">Internet of Things</h5>
+                                <p class="card-text">Menghubungkan dunia melalui perangkat pintar.</p>
+                                <a href="iot.html" class="btn btn-primary">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/BlockChain.jpg" class="card-img-top" alt="Blockchain">
+                            <div class="card-body">
+                                <h5 class="card-title">Blockchain</h5>
+                                <p class="card-text">Meningkatkan keamanan dan transparansi data.</p>
+                                <a href="blockchain.html" class="btn btn-primary">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="teknologi" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Teknologi Masa Depan</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm hover-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-robot fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title">Robotika Canggih</h5>
+                                <p class="card-text">Robot adaptif yang berinteraksi secara alami dengan manusia dan lingkungan, revolusi di industri dan kehidupan sehari-hari.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm hover-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-vr-cardboard fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title">Realitas Virtual & Augmented</h5>
+                                <p class="card-text">Pengalaman immersif untuk pendidikan, hiburan, dan industri, mengubah cara kita berinteraksi dengan dunia digital.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm hover-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-brain fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title">Kecerdasan Buatan</h5>
+                                <p class="card-text">AI yang mampu belajar dan beradaptasi, membawa solusi inovatif di berbagai sektor dari kesehatan hingga transportasi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm hover-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-dna fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title">Bioteknologi</h5>
+                                <p class="card-text">Inovasi dalam rekayasa genetika dan terapi gen, membuka jalan baru dalam pengobatan dan peningkatan kualitas hidup.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm hover-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-solar-panel fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title">Energi Terbarukan</h5>
+                                <p class="card-text">Teknologi energi bersih dan efisien, menciptakan masa depan yang lebih berkelanjutan dan ramah lingkungan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm hover-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-microchip fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title">Komputasi Kuantum</h5>
+                                <p class="card-text">Revolusi dalam kecepatan komputasi, membuka potensi baru dalam pemecahan masalah kompleks dan kriptografi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tentang" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Inovasi digital di masa depan</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4">
+                        <img src="img/inov.webp" alt="Tim Kami" class="img-fluid rounded shadow-sm">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Inovasi digital memainkan peran yang semakin krusial dalam membangun masa depan. Revolusi Industri 4.0, yang didorong oleh teknologi seperti Internet of Things (IoT), kecerdasan buatan (AI), dan big data, telah menciptakan perubahan signifikan dalam berbagai sektor. Manufaktur, misalnya, telah mengalami transformasi besar dengan hadirnya otomatisasi dan robotika cerdas, yang tidak hanya meningkatkan efisiensi tetapi juga mengurangi biaya produksi. Penggunaan sensor pintar dan analitik prediktif di pabrik-pabrik memungkinkan proses produksi berjalan lebih lancar dan terhindar dari gangguan yang tidak diinginkan.</p>
+                        <a href="deskripsi.html" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Apa Kata Mereka</h2>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="img/2.webp" alt="Testimonial 1" class="rounded-circle mb-3">
+                                    <p class="lead">"Inovasi digital yang ditawarkan sungguh luar biasa dan membantu bisnis kami berkembang pesat."</p>
+                                    <p class="font-weight-bold">- anonym 1, CEO XYZ Corp</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="img/1 (1).webp" alt="Testimonial 2" class="rounded-circle mb-3">
+                                    <p class="lead">"Teknologi yang diimplementasikan sangat canggih dan user-friendly. Sangat merekomendasikan!"</p>
+                                    <p class="font-weight-bold">- Anonym 2, CTO ABC corp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <i class="fas fa-users fa-3x mb-3"></i>
+                        <h2 class="count-up" data-target="1000">0</h2>
+                        <p>Klien Puas</p>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <i class="fas fa-project-diagram fa-3x mb-3"></i>
+                        <h2 class="count-up" data-target="500">0</h2>
+                        <p>Proyek Selesai</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-award fa-3x mb-3"></i>
+                        <h2 class="count-up" data-target="50">0</h2>
+                        <p>Penghargaan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Hubungi Kami</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.5712196462023!2d107.62592307577277!3d-6.941736667956439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e86413eb50ad%3A0xf9930b5268e3fee1!2sSMKN%204%20Bandung!5e0!3m2!1sid!2sid!4v1729257982894!5m2!1sid!2sid"
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 DigiInnovate. Hak Cipta Dilindungi.</p>
+            <div class="social-icons">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script>
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#ffffff" },
+            shape: { type: "circle", stroke: { width: 0, color: "#000000" }, polygon: { nb_sides: 5 } },
+            opacity: { value: 0.5, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
+            size: { value: 3, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
+            line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+            move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+            modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } }
+        },
+        retina_detect: true
+    });
+</script>
+<script src="page-transition.js"></script>
+</body>
+</html>
